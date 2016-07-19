@@ -17,6 +17,10 @@ class TravelLocationsMapVC: UIViewController {
     var managedObjectContext: NSManagedObjectContext!
     var request: NSFetchRequest!
     
+    var persistentDataService: PersistentDataService!
+    
+    var travelPins: [Pin] = []
+    
     // MARK: - Outlets
     
     @IBOutlet var mapView: MKMapView!
@@ -26,6 +30,10 @@ class TravelLocationsMapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /* Get access to persisted data */
+        managedObjectContext = coreDataStack.managedObjectContext
+        persistentDataService = PersistentDataService(managedObjectContext: managedObjectContext)
+        
         /* Configure the map */
         // map.delegate = self
         
@@ -34,6 +42,21 @@ class TravelLocationsMapVC: UIViewController {
         touchAndHold.minimumPressDuration = 0.8
         
         mapView.addGestureRecognizer(touchAndHold)
+        
+        /* Get stored travel locations and display them on the map */
+        travelPins = persistentDataService.getPinEntities()
+        print("travelPins is \(travelPins.count)")
+        print("here is travelPins: \(travelPins)")
+        print("travelPins is \(travelPins[0])")
+        print("\n\n Here is travelPins[0].latitude: \(Double(travelPins[0].latitude!))\n")
+        
+        for item in travelPins {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: Double(item.latitude!), longitude: Double(item.longitude!))
+            annotation.title = item.title!
+            self.mapView.addAnnotation(annotation)
+        }
+        
         
     }
     
