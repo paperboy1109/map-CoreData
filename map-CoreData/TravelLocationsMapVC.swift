@@ -42,8 +42,11 @@ class TravelLocationsMapVC: UIViewController {
             /* Get the tapped location */
             
             let touchPoint = gestureRecognizer.locationInView(self.mapView)
+            print("Here is touchPoint: \(touchPoint)")
             
             let newCoordinate = self.mapView.convertPoint(touchPoint, toCoordinateFromView: self.mapView)
+            print("Here is newCoordinate: \(newCoordinate)")
+            print("Here is newCoordinate.latitude: \(newCoordinate.latitude)")
             
             let location = CLLocation(latitude: newCoordinate.latitude, longitude: newCoordinate.longitude)
             

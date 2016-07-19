@@ -13,6 +13,7 @@
 		4E78635E1D3E8CF100CD9B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E78635D1D3E8CF100CD9B8B /* Assets.xcassets */; };
 		4E7863611D3E8CF100CD9B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78635F1D3E8CF100CD9B8B /* LaunchScreen.storyboard */; };
 		4E78636A1D3E924300CD9B8B /* TravelLocationsMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7863691D3E924300CD9B8B /* TravelLocationsMapVC.swift */; };
+		4E78636D1D3EA20D00CD9B8B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78636C1D3EA20D00CD9B8B /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4E7863601D3E8CF100CD9B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E7863621D3E8CF100CD9B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7863691D3E924300CD9B8B /* TravelLocationsMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLocationsMapVC.swift; sourceTree = "<group>"; };
+		4E78636C1D3EA20D00CD9B8B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4E7863551D3E8CF100CD9B8B /* map-CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				4E78636B1D3EA1C400CD9B8B /* Model */,
 				4E7863681D3E920D00CD9B8B /* Controller */,
 				4E7863561D3E8CF100CD9B8B /* AppDelegate.swift */,
 				4E7863581D3E8CF100CD9B8B /* ViewController.swift */,
@@ -73,6 +76,14 @@
 				4E7863691D3E924300CD9B8B /* TravelLocationsMapVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		4E78636B1D3EA1C400CD9B8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E78636C1D3EA20D00CD9B8B /* CoreDataStack.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 				4E7863591D3E8CF100CD9B8B /* ViewController.swift in Sources */,
 				4E7863571D3E8CF100CD9B8B /* AppDelegate.swift in Sources */,
 				4E78636A1D3E924300CD9B8B /* TravelLocationsMapVC.swift in Sources */,
+				4E78636D1D3EA20D00CD9B8B /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
