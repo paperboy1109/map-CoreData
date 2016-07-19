@@ -8,8 +8,14 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 class TravelLocationsMapVC: UIViewController {
+    
+    // MARK: - Properties
+    var coreDataStack = CoreDataStack()
+    var managedObjectContext: NSManagedObjectContext!
+    var request: NSFetchRequest!
     
     // MARK: - Outlets
     
@@ -100,6 +106,14 @@ class TravelLocationsMapVC: UIViewController {
                 annotation.title = title
                 
                 self.mapView.addAnnotation(annotation)
+                
+                /* Save the annotation using Core Data */
+                let touristLocation = NSEntityDescription.insertNewObjectForEntityForName("Pin", inManagedObjectContext: self.coreDataStack.managedObjectContext) as! Pin
+                touristLocation.latitude = annotation.coordinate.latitude
+                touristLocation.longitude = annotation.coordinate.longitude
+                touristLocation.title = annotation.title
+                
+                self.coreDataStack.saveContext()
             }
             
 
