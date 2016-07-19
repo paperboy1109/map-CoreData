@@ -12,6 +12,7 @@
 		4E78635C1D3E8CF100CD9B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78635A1D3E8CF100CD9B8B /* Main.storyboard */; };
 		4E78635E1D3E8CF100CD9B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E78635D1D3E8CF100CD9B8B /* Assets.xcassets */; };
 		4E7863611D3E8CF100CD9B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E78635F1D3E8CF100CD9B8B /* LaunchScreen.storyboard */; };
+		4E78636A1D3E924300CD9B8B /* TravelLocationsMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7863691D3E924300CD9B8B /* TravelLocationsMapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4E78635D1D3E8CF100CD9B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E7863601D3E8CF100CD9B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E7863621D3E8CF100CD9B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7863691D3E924300CD9B8B /* TravelLocationsMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLocationsMapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		4E7863551D3E8CF100CD9B8B /* map-CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				4E7863681D3E920D00CD9B8B /* Controller */,
 				4E7863561D3E8CF100CD9B8B /* AppDelegate.swift */,
 				4E7863581D3E8CF100CD9B8B /* ViewController.swift */,
 				4E78635A1D3E8CF100CD9B8B /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				4E7863621D3E8CF100CD9B8B /* Info.plist */,
 			);
 			path = "map-CoreData";
+			sourceTree = "<group>";
+		};
+		4E7863681D3E920D00CD9B8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E7863691D3E924300CD9B8B /* TravelLocationsMapVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				4E7863591D3E8CF100CD9B8B /* ViewController.swift in Sources */,
 				4E7863571D3E8CF100CD9B8B /* AppDelegate.swift in Sources */,
+				4E78636A1D3E924300CD9B8B /* TravelLocationsMapVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
