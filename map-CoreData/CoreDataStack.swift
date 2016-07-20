@@ -21,10 +21,7 @@ class CoreDataStack {
         let urls = NSFileManager.defaultManager().URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask)
         return urls[urls.count-1]
     }()
-    
-    
-    
-    
+                
     // STEP 2 of 4: set the managed object model
     // "A managed object model describes the entities in the stores."
     

@@ -45,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E3D3DF61D3F21A4007C4B6C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4E78635F1D3E8CF100CD9B8B /* LaunchScreen.storyboard */,
+				4E78635A1D3E8CF100CD9B8B /* Main.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		4E78634A1D3E8CF000CD9B8B = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +73,12 @@
 		4E7863551D3E8CF100CD9B8B /* map-CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				4E7863751D3EA67B00CD9B8B /* Services */,
 				4E7863561D3E8CF100CD9B8B /* AppDelegate.swift */,
+				4E3D3DF61D3F21A4007C4B6C /* Assets */,
+				4E78635D1D3E8CF100CD9B8B /* Assets.xcassets */,
+				4E7863751D3EA67B00CD9B8B /* Services */,
 				4E78636B1D3EA1C400CD9B8B /* Model */,
 				4E7863681D3E920D00CD9B8B /* Controller */,
-				4E78635A1D3E8CF100CD9B8B /* Main.storyboard */,
-				4E78635D1D3E8CF100CD9B8B /* Assets.xcassets */,
-				4E78635F1D3E8CF100CD9B8B /* LaunchScreen.storyboard */,
 				4E7863621D3E8CF100CD9B8B /* Info.plist */,
 			);
 			path = "map-CoreData";
@@ -331,6 +339,7 @@
 				4E7863671D3E8CF100CD9B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
